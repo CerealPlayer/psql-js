@@ -2,10 +2,11 @@
   "name": "psql-js",
   "version": "0.0.1",
   "description": "PostgreSQL made easy for JS",
-  "main": "src/index.ts",
+  "main": "build/index.ts",
+  "type": "module",
   "scripts": {
     "test": "jest",
-    "start": "tsc & node build/index.js"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
