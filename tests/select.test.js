@@ -8,6 +8,7 @@ dotenv.config({
 
 test("Returns something on a products table with a product_name column", async () => {
   const psql = new PSQL(process.env.PSQL_URI);
-  const { rows } = await psql.from("products").select("*").run();
+  const { rows } = await psql.from("products").select("*").eq("product_name", "React");
+  console.log(rows);
   expect(rows[0].product_name).not.toBeUndefined();
 });
