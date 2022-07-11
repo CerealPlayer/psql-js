@@ -1,4 +1,3 @@
-import { Pool } from "pg";
 import { FilterBuilder } from "./FilterBuilder"
 import { Base } from "./Base"
 

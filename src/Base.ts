@@ -1,4 +1,4 @@
-import { Pool, Query, QueryResult } from "pg";
+import { Pool, QueryResult } from "pg";
 
 export class Base {
   query!: string;
